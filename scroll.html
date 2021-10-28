@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Page Scroll</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: darkseagreen;
+    }
+
+    .wrapper {
+        width: 1300px;
+        height: 4500px;
+        background-color: black;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    nav {
+        width: 1200px;
+        height: 100px;
+        background-color: lightblue;
+        color: orange;
+        padding-top: 25px;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #section_01, #section_03, #section_05 {
+        width: 1200px;
+        height: 800px;
+        background-color: tan;
+        margin: 0 auto;
+
+    }
+
+    #section_02, #section_04 {
+        width: 1200px;
+        height: 800px;
+        background-color: saddlebrown;
+        margin: 0 auto;
+    }
+
+    p#nav_section_01, p#nav_section_02, p#nav_section_03, p#nav_section_04, p#nav_section_05 {
+        display: inline;
+        font-size: 24px;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 0px 25px;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: peachpuff;
+    }
+
+    a:active {
+        text-decoration: none;
+        color: white;
+    }
+
+
+    /*#section_03 {*/
+    /*    width: 1200px;*/
+    /*    height: 800px;*/
+    /*    background-color: darkseagreen;*/
+    /*    margin: 0 auto;*/
+
+
+    /*#section_04 {*/
+    /*    width: 1200px;*/
+    /*    height: 800px;*/
+    /*    background-color: khaki;*/
+    /*    margin: 0 auto;*/
+
+
+    /*#section_05 {*/
+    /*    width: 1200px;*/
+    /*    height: 800px;*/
+    /*    background-color: darkolivegreen;*/
+    /*    margin: 0 auto;*/
+
+    section {
+        font-size: 45px;
+        color: white;
+        font-family: Helvetica;
+    }
+footer {
+    width: 1000px;
+    height: 100px;
+    background-color: darkolivegreen;
+    margin: 0 auto;
+}
+#top {
+    color: red;
+}
+</style>
+<body>
+<div class="wrapper">
+    <nav id="top"></nav>
+    <nav>
+        <a href="#section_01"><p id="nav_section_01">section one</p></a>
+        <a href="#section_02"><p id="nav_section_02">section two</p></a>
+        <a href="#section_03"><p id="nav_section_03">section three</p></a>
+        <a href="#section_04"><p id="nav_section_04">section four</p></a>
+        <a href="#section_05"><p id="nav_section_05">section five</p></a>
+
+
+    </nav>
+
+    <section id="section_01">
+        <h2>Section One</h2>
+        <a href="#top">
+            <p>scroll back to top</p></a>
+    </section>
+
+    <section id="section_02">
+        <h2>Section Two</h2>
+        <a href="#top">
+            <p>scroll back to top</p></a>
+    </section>
+    <section id="section_03">
+        <h2>Section Three</h2>
+        <a href="#top">
+            <p>scroll back to top</p></a>
+    </section>
+
+    <section id="section_04">
+        <h2>Section Four</h2>
+        <a href="#top">
+            <p>scroll back to top</p></a>
+    </section>
+    <section id="section_05">
+        <h2>Section Five</h2>
+        <a href="#top">
+            <p>scroll back to top</p></a>
+    </section>
+
+    <footer><a href="#top">scroll back to top</a></footer>
+</div><!-- END OF CONTAINER-->
+</body>
+</html>
